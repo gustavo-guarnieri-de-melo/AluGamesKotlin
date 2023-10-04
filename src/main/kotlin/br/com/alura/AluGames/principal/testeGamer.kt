@@ -4,7 +4,6 @@ import br.com.alura.AluGames.modelo.Gamer
 import java.util.Scanner
 
 fun main(){
-
     var ler = Scanner(System.`in`)
 //    val gamer1 = Gamer(
 //        nome = "Gustavo",
