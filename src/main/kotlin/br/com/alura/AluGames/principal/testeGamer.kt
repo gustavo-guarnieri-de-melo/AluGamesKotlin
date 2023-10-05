@@ -5,11 +5,12 @@ import java.util.Scanner
 
 fun main(){
     var ler = Scanner(System.`in`)
+
 //    val gamer1 = Gamer(
 //        nome = "Gustavo",
 //        email = "gustavo@email.com")
 //    println(gamer1)
-//
+
 //    val gamer2 = Gamer(
 //        "Davi",
 //        "davi@email.com",
@@ -17,7 +18,7 @@ fun main(){
 //        "davijbatista",
 //    )
 //    println(gamer2)
-//
+
 //    gamer1.let {
 //        it.usuario = "gustavoMelo"
 //        it.dataDeNascimento = "19/09/2000"
@@ -26,15 +27,15 @@ fun main(){
 //    println(gamer1)
 
     println("insira seu nome, email, data de nascimento e usuario")
-    val nome = Gamer(
+    val gamer1 = Gamer(
         nome = "",
         email = "",
         dataDeNascimento = "",
         usuario = ""
     )
-    nome.let {
+    gamer1.let {
         println("Insira o nome: ")
-        it.nome = ler.nextLine()
+        it.nome= ler.nextLine()
 
         println("insira o email: ")
         it.email= ler.nextLine()
@@ -44,8 +45,10 @@ fun main(){
 
         println("Insira o nome do usuario: ")
         it.usuario = ler.nextLine()
+
+    }.also {
+        println(gamer1)
     }
-    println(nome)
 
 
 }
